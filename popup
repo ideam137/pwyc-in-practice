@@ -1,0 +1,46 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.classless.min.css">
+    
+  </head>
+  <dialog id="modal">
+  <form id="modal-form" method="dialog">
+    <button id="close-button">X</button><br>
+​
+    <label for="text-input">Does your gym have problems maintaining monthly membership?</label>
+    <input type="text" id="text-input" name="stuff" placeholder="answer" required><br>
+    <label for="text-input">Question 2?</label>
+    <input type="text" id="text-input" name="stuff" placeholder="answer" required><br>
+​
+    <fieldset>
+    
+    <legend>Gym Size:</legend>
+    
+    <label>
+      <input type="radio" name="size" value="small" checked>
+      Small
+    </label>
+    
+    <label>
+      <input type="radio" name="size" value="medium">
+      Medium
+    </label>
+    
+    <label>
+      <input type="radio" name="size" value="large">
+      Large
+    </label>
+    
+  </fieldset>
+    <button type="submit" id="submit-button">Submit</button>
+  </form>
+</dialog>
+  <body>
+    <main class="container">
+      <h1>This will be the page that shows up after the gym has entered their answers to the pop up and will contain recommendations based on the answered questions.</h1>
+    </main>
+  </body>
+</html>
