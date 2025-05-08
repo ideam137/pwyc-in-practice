@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.classless.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.jade.min.css">
   <script src="script.js" defer></script>
   <title>Document</title>
 </head>
@@ -13,7 +13,7 @@
   <dialog id="modal">
     <article>
       <form id="modal-form" method="dialog">
-        <button id="close-button">X</button><br><br><br>
+        <button id="close-button">X</button><br><br>
         <h2>PWYC in Practice</h2><br>
         <section id="accordions">
           <details>
@@ -22,7 +22,7 @@
               explanation of what access type means assuming that they haven't read the toolkit
             </p>
           </details>
-        </section>
+        </section><br>
         <label for="text-input">What are your goals as a gym -- recurring revenue, ease of access, or both?</label>
         <input type="text" id="text-input" name="stuff" placeholder="Recurring revenue, Ease of access, Both"
           required><br>
@@ -32,8 +32,7 @@
           <option value="" selected>Select…</option>
           <option>Yes</option>
           <option>No</option>
-        </select>
-        <input type="text" id="text-input" name="stuff" placeholder="Yes or No" required><br>
+        </select><br>
 
         <label for="text-input">Can your gym software support multiple pricing structures easily?</label>
         <input type="text" id="text-input" name="stuff" placeholder="Yes or No" required><br>
