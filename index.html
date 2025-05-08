@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=" 1.0>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.classless.min.css">
   <script src="script.js" defer></script>
   <title>Document</title>
@@ -23,9 +23,15 @@
         </details>
       </section>
       <label for="text-input">What are your goals as a gym -- recurring revenue, ease of access, or both?</label>
-      <input type="text" id="text-input" name="stuff" placeholder="answer" required><br>
+      <input type="text" id="text-input" name="stuff" placeholder="Recurring revenue, Ease of access, Both"
+        required><br>
 
       <label for="text-input">Are you concerned about potential misuse of a day-pass model?</label>
+      <select id="select" name="select" required>
+        <option value="" selected>Select…</option>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
       <input type="text" id="text-input" name="stuff" placeholder="Yes or No" required><br>
 
       <label for="text-input">Can your gym software support multiple pricing structures easily?</label>
