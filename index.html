@@ -13,7 +13,7 @@
   <dialog id="modal">
     <article>
       <form id="modal-form" method="dialog">
-        <button id="close-button">X</button><br><br>
+        <button id="close-button" class="secondary">Close</button><br><br>
         <h2>PWYC in Practice</h2><br>
         <section id="accordions">
           <details>
@@ -23,24 +23,33 @@
             </p>
           </details>
         </section><br>
+
         <label for="text-input">What are your goals as a gym -- recurring revenue, ease of access, or both?</label>
-        <input type="text" id="text-input" name="stuff" placeholder="Recurring revenue, Ease of access, Both"
-          required><br>
+        <select id="select" name="c1goals" required>
+          <option value="" selected>Select…</option>
+          <option value="Recurring revenue">Recurring revenue</option>
+          <option value="Ease of access">Ease of access</option>
+          <option value="Both">Both</option>
+        </select><br>
 
         <label for="text-input">Are you concerned about potential misuse of a day-pass model?</label>
-        <select id="select" name="select" required>
+        <select id="select" name="c1misuse" required>
           <option value="" selected>Select…</option>
-          <option>Yes</option>
-          <option>No</option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
         </select><br>
 
         <label for="text-input">Can your gym software support multiple pricing structures easily?</label>
-        <input type="text" id="text-input" name="stuff" placeholder="Yes or No" required><br>
+        <select id="select" name="c1software" required>
+          <option value="" selected>Select…</option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select><br>
 
-        <label for="text-input">Question?</label>
-        <input type="text" id="text-input" name="stuff" placeholder="answer" required><br>
+        <!-- <label for="text-input">Question?</label>
+        <input type="text" id="text-input" name="stuff" placeholder="answer" required><br> -->
 
-        <section id="accordions">
+        <!-- <section id="accordions">
           <details>
             <summary role="button">Component 2: Pricing Structure</summary>
             <p>
@@ -122,17 +131,32 @@
             Large
           </label>
 
-        </fieldset>
+        </fieldset> -->
 
         <button type="submit" id="submit-button">Submit</button>
       </form>
     </article>
   </dialog>
 
-  <main class="container">
+  <!-- <div id="recommendationOutput"></div> -->
+  <h1>PWYC Model Results</h1>
+  <h5>Thanks for taking our PWYC toolkit survey! Based on your answers, here is what we would recommend you implement
+    for each of the toolkit components!</h5>
+
+  <article id="article">
+    <h2>Component 1: Access Type</h2>
+    <p id="recommendationOutput">
+      I think the rec will go here
+    </p>
+    <footer>
+      <small>Duis nec elit placerat, suscipit nibh quis, finibus neque.</small>
+    </footer>
+  </article>
+
+  <!-- <main class="container">
     <h1>This will be the page that shows up after the gym has entered their answers to the pop up and will contain
       recommendations based on the answered questions.</h1>
-  </main>
+  </main> -->
 </body>
 
 </html>
