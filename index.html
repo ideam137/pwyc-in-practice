@@ -15,6 +15,8 @@
       <form id="modal-form" method="dialog">
         <button id="close-button" class="secondary">Close</button><br><br>
         <h2>PWYC in Practice</h2><br>
+
+        <!-- COMPONENT 1-->
         <section id="accordions">
           <details>
             <summary role="button">Component 1: Access Type</summary>
@@ -44,8 +46,48 @@
           <option value="" selected>Select…</option>
           <option value="Yes">Yes</option>
           <option value="No">No</option>
+        </select><br><br>
+
+        <!-- COMPONENT 2-->
+        <section id="accordions">
+          <details>
+            <summary role="button">Component 2: </summary>
+            <p>
+              explanation of what access type means assuming that they haven't read the toolkit
+            </p>
+          </details>
+        </section><br>
+
+        <label for="text-input">Do you need predicable pricing for reporting and tracking purposes?</label>
+        <select name="c2predict" required>
+          <option value="" selected>Select…</option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
         </select><br>
 
+        <label for="text-input">Is it important to offer maximum flexibility to participants based on need?</label>
+        <select name="c2flex" required>
+          <option value="" selected>Select…</option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select><br>
+
+        <label for="text-input">Can your software accommodate a sliding scale model?</label>
+        <select name="c2software" required>
+          <option value="" selected>Select…</option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select><br>
+
+        <label for="text-input">Are you interested in involving participants in community service
+          (volunteerism)?</label>
+        <select name="c2vol" required>
+          <option value="" selected>Select…</option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select><br>
+
+        <!-- ALL QUESTIONS BEFORE THIS POINT-->
         <button type="submit" id="submit-button">Submit</button>
       </form>
     </article>

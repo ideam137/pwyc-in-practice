@@ -40,7 +40,7 @@ function generateRecommendation(answers) {
     answers.c1misuse === "yes" &&
     answers.c1software === "no"
   ) {
-    return "Start with Python for data science. JavaScript isn't necessary yet.";
+    return "We recommend you consider implementing both a monthly and a daily PWYC model.";
   } else if (
     answers.c1goals === "Recurring revenue" &&
     answers.c1misuse === "no" &&
