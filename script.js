@@ -4,7 +4,6 @@ modal.showModal();
 
 // ----- close
 const closeButton = document.querySelector("#close-button");
-
 closeButton.addEventListener("click", closeModal);
 
 function closeModal() {
@@ -13,33 +12,21 @@ function closeModal() {
   textOutput.innerText = "You closed the modal without entering anything. Boo.";
 }
 
-//----- submit
-const modalForm = document.querySelector("#modal-form");
-
-//modalForm.addEventListener("submit", closeModal);
-modalForm.addEventListener("submit", gatherInfo);
-
-function gatherInfo() {
-  const textOutput = document.querySelector("#text-output");
-  textOutput.innerText = "You entered: " + modalForm.stuff.value;
-}
-
 // ----- create recommendations
-document
-  .getElementById("modal-form")
-  .addEventListener("submit-button", function (e) {
-    e.preventDefault(); // Prevent form submission
+document.getElementById("modal-form").addEventListener("submit", function (e) {
+  e.preventDefault(); // Prevent form submission
 
-    const formData = new FormData(e.target);
-    const answers = {
-      c1goals: formData.get("c1goals"),
-      c1misuse: formData.get("c1misuse"),
-      c1software: formData.get("c1software"),
-    };
+  const formData = new FormData(e.target);
+  const answers = {
+    c1goals: formData.get("c1goals"),
+    c1misuse: formData.get("c1misuse").toLowerCase(),
+    c1software: formData.get("c1software").toLowerCase(),
+  };
 
-    const recommendation = generateRecommendation(answers);
-    document.getElementById("recommendationOutput").innerText = recommendation;
-  });
+  const recommendation = generateRecommendation(answers);
+  document.getElementById("recommendationOutput").innerText = recommendation;
+  modal.close();
+});
 
 function generateRecommendation(answers) {
   if (
