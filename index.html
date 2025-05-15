@@ -55,11 +55,17 @@
         <hr />
 
         <!-- COMPONENT 2-->
-        <section id="accordions">
+        <!-- <section id="accordions">
           <details>
             <summary role="button">Component 2: </summary>
             <p>
-              explanation of what access type means assuming that they haven't read the toolkit
+              PWYC prices can exist in a <b>tiered model</b>, a <b>sliding scale</b>, or incorporate
+              <b>volunteerism</b>. Tiered and sliding
+              scale models are mutually exclusive, while volunteerism can be incorporated into either. A tiered model is
+              a set rate or rate discounts that can be applied to day passes and monthly memberships. Sliding scale
+              models are true PWYC programs where the participant selects an amount they can pay for gym access. While
+              uncommon, another option for gyms is to ask or require a certain number of volunteer hours from PWYC
+              participants.
             </p>
           </details>
         </section><br>
@@ -91,7 +97,32 @@
           <option value="" selected>Select…</option>
           <option value="Yes">Yes</option>
           <option value="No">No</option>
+        </select><br> -->
+
+        <!-- COMPONENT 3-->
+        <section id="accordions">
+          <details>
+            <summary role="button">Component 3: Financial Support</summary>
+            <p>
+
+            </p>
+          </details>
+        </section><br>
+
+        <label for="text-input">Can you absorb the cost of discounted memberships within your operating budget?</label>
+        <select name="c3budget" required>
+          <option value="" selected>Select…</option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
         </select><br>
+
+        <label for="text-input">Are your members likely to contribute to a community fund?</label>
+        <select name="c3fund" required>
+          <option value="" selected>Select…</option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select><br>
+
 
         <!-- ALL QUESTIONS BEFORE THIS POINT-->
         <button type="submit" id="submit-button">Submit</button>
@@ -113,9 +144,18 @@
       <h2>Component 1: Access Type</h2>
       <p id="recommendationOutput"></p>
       <footer>
-        <small>Duis nec elit placerat, suscipit nibh quis, finibus neque.</small>
+        <small>Keep in mind that these are just recommendations based on what we interpret would work best for your gym
+          based on your answers! As confident as we are in our recommendations, we also suggest that you take a look at
+          the AAC&apos;s original PWYC Toolkit to better clarify the recommendations we gave and to see if there is an
+          even better option for your gym that we may not have seen given our limited question set.</small>
       </footer>
     </article>
+
+    <article id="article">
+      <h2>Component 3: Financial Support</h2>
+      <p id=""></p>
+    </article>
+
   </main>
 
 </body>
